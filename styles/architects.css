@@ -130,9 +130,51 @@ color: #131313;
     font-weight: 500;
 }
 .features-description{
-    color: var(--Dark-03, #727272);\
+    color: var(--Dark-03, #727272);
     font-size: 16px;
    font-weight:400;
+}
+.facts-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.fact{
+    border: 1px solid #FF900E ;
+    width: 200px;
+    height: 200px;
+    border-radius: 8px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 35px 40px 35px;
+}
+.fact-icon{
+    width: 45.221px;
+height: 45.221px;
+flex-shrink: 0;
+}
+.fact-number{
+    color: var(--Dark-02, #424242);
+font-size: 45px;
+font-weight: 600;
+margin-top: 5px;
+margin-bottom: 10px;
+}
+.fact-name{
+    color: var(--Dark-03, #727272);
+font-size: 20px;
+font-weight: 600;
+}
+.some-facts-tittle{
+    color: var(--Dark-01, #131313);
+font-size: 45px;
+font-weight: 700;
+}
+.some-facts-description{
+    color: var(--Dark-03, #727272);
+font-size: 16px;
+font-weight: 400;
+width: 542px;
 }
  
     
@@ -140,14 +182,51 @@ color: #131313;
     .nav-bar,.nav-links,.team{
        flex-direction: column;
     }
-    .team-pic-container{
+    .team-pic-container,
+    .facts-container,
+    .sponsor-companies{
         grid-template-columns: repeat(1,1fr);
         
         }
         .features{
             margin-left: 10px;
         }
+        .facts-container{
+            justify-content: center;
+        }
+        .some-facts-description{
+            width: 342px;
+        }
+        .sponsor-companies{
+            gap: 50px;
+        }
+      
     }
+    .sponsor{
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+    .sponsor-description{
+        color: var(--Dark-03, #727272);
+font-size: 16px;
+font-weight: 400;
+justify-content: space-between;
+text-align: center;
+
+    }
+    .sponsor-companies{
+        display: grid;
+        grid-template-columns: repeat(5,1fr);
+        margin-top: 40px;
+        filter: grayscale(100);
+    }
+    .sponsor-logo{
+        width: 165.833px;
+height: 50px;
+flex-shrink: 0;
+    }
+   
 
 
 
@@ -156,4 +235,12 @@ color: #131313;
         .team{
             flex-direction: column;
         }
+        .facts-container,.sponsor-companies{
+            grid-template-columns: repeat(2,1fr);
+            gap: 24px;
+        }
+        .some-facts{
+            margin-left: 20px;
+        }
+        
     }
